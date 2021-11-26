@@ -1,0 +1,1 @@
+# AtCoder submission in Rust
