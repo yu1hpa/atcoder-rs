@@ -127,6 +127,12 @@ path = "./{{ contest }}"
 ##bin-alias = '{% assign segments = url | split: "/" %}{{ segments[5] }}' # optional
 ##bin-src-path = './src/bin/{{ bin_alias }}.rs' # optional
 
+# for atcoder
+# Usage : cargo compete add abc200 a
+[add]
+url = "https://atcoder.jp/contests/{{ args[0] }}/tasks/{{ args[0] }}_{{ args[1] }}"
+bin-name = "{{ args[0] }}"
+
 [test]
 # Toolchain for the test. (optional)
 toolchain = "1.42.0"
